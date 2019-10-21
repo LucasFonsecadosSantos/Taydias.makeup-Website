@@ -1,0 +1,17 @@
+#index03
+    height: 100vh
+    background: #ec008c
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c)
+    background: linear-gradient(to right, #fc6767, #ec008c)
+    display: flex
+    align-items: center
+    .index03__sub
+        @include responsive_system(12,12,6,6,6)
+        display: flex
+        align-items: center
+        &:first-child
+            justify-content: center
+            img
+                width: 60%
+        &:last-child
+            justify-content: left

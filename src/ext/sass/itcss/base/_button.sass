@@ -1,0 +1,22 @@
+button
+    @include border_radius(8px)
+    cursor: pointer
+    font:
+        family: $__FONT__family-1
+    outline: none
+    border: none
+    padding: $__SPACING__padding-default/5 $__SPACING__padding-default/3
+    color: #FFF
+    background: $__COLOR__pink-1
+    box-shadow: 0 0 0 transparent, 0 0 10px $__COLOR__pink-1, 0 0 20px rgba(236, 0, 140, 0.5), 0 0 40px $__COLOR__pink-1, 0 0 100px $__COLOR__pink-1
+    transition: all 0.8s
+    &:hover
+        background: $__COLOR__pink-2
+        box-shadow: 0 0 0 transparent, 0 0 10px $__COLOR__pink-2, 0 0 20px rgba(252, 103, 10, 0.5), 0 0 40px $__COLOR__pink-2
+    // font:
+    //     family: $__FONT__family-1
+    // outline: none
+    // border: solid 2px $__COLOR__pink-1
+    // padding: $__SPACING__padding-default/5 $__SPACING__padding-default/3
+    // color: $__COLOR__pink-1
+    // background: transparent

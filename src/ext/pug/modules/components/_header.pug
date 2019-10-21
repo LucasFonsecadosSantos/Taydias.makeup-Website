@@ -45,3 +45,34 @@
 // BRIEF: <file_brief>                                        //
 //                                                            //
 ////////////////////////////////////////////////////////////////
+
+nav.navbar.navbar-dark.menu.fixed-top.navbar-expand-md.navbar-expand-lg.navbar-expand-xl
+    .container
+        a.navbar-brand(href="/")
+            //img(src="/img/logo02.svg")
+            p tay dias
+        button.navbar-toggler.navbar-toggler-right(type="button", data-toggle="collapse", data-target="#navbarNavDropdown", aria-controls="navbarNavDropdown", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNavDropdown
+            ul.navbar-nav.mr-0.ml-auto(style="float: right")
+                li.nav-item.active
+                    a.nav-link(href="/", alt="Link para seção inicial.", title="Clique para retornar a página inicial.") inicio
+                li.nav-item
+                    a.nav-link(href="#index01", alt="Link para a galeria de trabalhos.", title="Clique para acessar a página de imóveis.") trabalhos
+                li.nav-item
+                    a.nav-link(href="/", alt="Link para a página de contratos.", title="Clique para acessar a página de contratos.") marque seu horário
+                li.nav-item
+                    a.nav-link(href="/", alt="Link para a página de contratos.", title="Clique para acessar a página de imobiliárias.") minha história
+                li.nav-item
+                    a.nav-link(href="/", alt="Link para a página de contratos.", title="Clique para acessar a página de imobiliárias.") contato
+
+.container
+    .header__body
+        .header__bodyContent
+            .row
+                .header__bodyContent_sub
+                    h1 expresse concepções através da make
+                .header__bodyContent_sub
+        .header__bodyNav
+            a(href="#index01")
+                i.material-icons expand_more
