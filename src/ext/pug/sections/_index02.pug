@@ -1,0 +1,24 @@
+section#index02
+    .container
+        .section__title
+            h2 vamos agendar uma make?
+        form(action="#",method="POST")
+            .row
+                .index02__form_div6
+                    input#name(name="name",type="text",placeholder="Nome completo...", alt="Campo para digitar o nome completo.", title="Qual é seu nome? Digite aqui.")
+                .index02__form_div6
+                    input#email(name="email",type="email",placeholder="E-Mail", alt="Campo para digitar o email.", title="Qual é seu email? Digite aqui.")
+            .row
+                .index02__form_div6
+                    input#telephone(name="telephone",type="text",placeholder="Telefone", alt="Campo para digitar o seu telefone.", title="Qual é seu telefone? Preciso saber para entrar em contato contigo.")
+                .index02__form_div6
+                    input#city(name="city",type="text",placeholder="Cidade", alt="Campo para digitar sua cidade.", title="Qual é sua cidade? Preciso saber pois atendo em outras cidades.")
+            .row
+                .index02__form_div6
+                    select#day(name="day",type="text",placeholder="Dia", alt="Campo para inserir o dia da make.", title="Qual dia voce precisaria da make?")
+                        option(value="default") -- SELECIONE UM DIA --
+                .index02__form_div6
+                    select#month(name="month",type="text",placeholder="Mês", alt="Campo para selecionar o mês da make.", title="Qual mês?")
+                        option(value="default") -- SELECIONE UM MÊS --
+            .row
+                button(alt="Botão para agendar sua make.", title="Clique para agendarmos a make.") vamos marcar essa make!

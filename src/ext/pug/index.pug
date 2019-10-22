@@ -61,54 +61,10 @@ html
         header
             include modules/components/_header.pug
         main
-            section#index01
-                .row
-                    .index01__sub
-                        img(src="img/structure/default-img.gif")
-                    .index01__sub
-                        img(src="img/structure/default-img.gif")
-                .row
-                    .index01__sub
-                        img(src="img/structure/default-img.gif")
-                    .index01__sub
-                        img(src="img/structure/default-img.gif")
-            section#index02
-                .container
-                    .section__title
-                        h2 vamos agendar uma make?
-                    form(action="#",method="POST")
-                        .row
-                            .index02__form_div6
-                                input#name(name="name",type="text",placeholder="Nome completo...", alt="Campo para digitar o nome completo.", title="Qual é seu nome? Digite aqui.")
-                            .index02__form_div6
-                                input#email(name="email",type="email",placeholder="E-Mail", alt="Campo para digitar o email.", title="Qual é seu email? Digite aqui.")
-                        .row
-                            .index02__form_div6
-                                input#telephone(name="telephone",type="text",placeholder="Telefone", alt="Campo para digitar o seu telefone.", title="Qual é seu telefone? Preciso saber para entrar em contato contigo.")
-                            .index02__form_div6
-                                input#city(name="city",type="text",placeholder="Cidade", alt="Campo para digitar sua cidade.", title="Qual é sua cidade? Preciso saber pois atendo em outras cidades.")
-                        .row
-                            .index02__form_div6
-                                select#day(name="day",type="text",placeholder="Dia", alt="Campo para inserir o dia da make.", title="Qual dia voce precisaria da make?")
-                                    option(value="default") -- SELECIONE UM DIA --
-                            .index02__form_div6
-                                select#month(name="month",type="text",placeholder="Mês", alt="Campo para selecionar o mês da make.", title="Qual mês?")
-                                    option(value="default") -- SELECIONE UM MÊS --
-                        .row
-                            button(alt="Botão para agendar sua make.", title="Clique para agendarmos a make.") vamos marcar essa make!
-            section#index03
-                .container
-                    .row
-                        .index03__sub
-                            img(src="img/content/model.png")
-                        .index03__sub
-                            .section__title
-                                h2.white-text mas quem sou eu afinal?
-                                p. 
-                                    Meu nome é Taynara Dias, nasci em Congonhas, MG e hoje sou graduanda de Zootecnia
-                                    pela Universidade Federal de Lavras. Aos 20 anos descobri minha paixão pela arte
-                                    da maquiagem e beleza. Acredito que esta via pode ser um meio de alavancar o poder
-                                    feminino ao mesmo tempo em que podemos elevar o sentimento de bem estar consigo mesmo.
+            include sections/_index01.pug
+            include sections/_index02.pug
+            include sections/_index03.pug
+            include sections/_index04.pug
         footer
             include modules/components/_footer.pug
     include modules/settings/_js-imports.pug
