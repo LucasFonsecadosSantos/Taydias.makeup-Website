@@ -1,0 +1,16 @@
+HOST='10.113.68.50'
+USER='sms'
+PASSWD='Abc123451'
+LOCALPATH='kmpy/unica/Campaign/partitions/partition1/CiktiDosyalari'
+FILE=*.sms
+DIR='SMS/'
+
+ftp -n $HOST <<EOF
+quote USER $USER
+quote PASS $PASSWD
+cd $DIR
+lcd $LOCALPATH
+put $FILE
+quit
+exit;
+EOF
