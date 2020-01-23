@@ -36,7 +36,7 @@ export class NavbarController extends Controller {
     }
 
     private _buildMessages(): void {
-
+        
         this._messages
 
             .then(response => response.json())
@@ -45,29 +45,29 @@ export class NavbarController extends Controller {
 
                 data['navbar'].forEach(message => {
 
-                    let element: HTMLElement = document.querySelector(data['id']);
-
-                    if (data['text']) {
-
-                        element.textContent = data['text'];
-
-                    }
-
-                    if (data['alt']) {
-
-                        element.setAttribute('alt', data['alt']);
+                    let element: HTMLElement = document.getElementById(message['id']);
+                    
+                    if (message['text']) {
+                        
+                        element.textContent = message['text'];
 
                     }
 
-                    if (data['route']) {
+                    if (message['alt']) {
 
-                        element.setAttribute('href', data['route']);
+                        element.setAttribute('alt', message['alt']);
 
                     }
 
-                    if (data['title']) {
+                    if (message['route']) {
 
-                        element.setAttribute('title', data['title']);
+                        element.setAttribute('href', message['route']);
+
+                    }
+
+                    if (message['title']) {
+
+                        element.setAttribute('title', message['title']);
 
                     }
 

@@ -24,18 +24,18 @@ export class NavbarController extends Controller {
             .then(response => response.json())
             .then(data => {
             data['navbar'].forEach(message => {
-                let element = document.querySelector(data['id']);
-                if (data['text']) {
-                    element.textContent = data['text'];
+                let element = document.getElementById(message['id']);
+                if (message['text']) {
+                    element.textContent = message['text'];
                 }
-                if (data['alt']) {
-                    element.setAttribute('alt', data['alt']);
+                if (message['alt']) {
+                    element.setAttribute('alt', message['alt']);
                 }
-                if (data['route']) {
-                    element.setAttribute('href', data['route']);
+                if (message['route']) {
+                    element.setAttribute('href', message['route']);
                 }
-                if (data['title']) {
-                    element.setAttribute('title', data['title']);
+                if (message['title']) {
+                    element.setAttribute('title', message['title']);
                 }
             });
         })

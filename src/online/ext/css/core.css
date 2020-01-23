@@ -9698,7 +9698,11 @@ h2:first-letter {
 }
 
 header {
-  background: #000;
+  background-image: url("/img/structure/back.png");
+  background-size: 80%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: right 10% bottom;
   height: 100vh;
   min-height: 100vh;
 }
@@ -9751,8 +9755,8 @@ nav .navbar-brand {
 }
 nav .navbar-brand:before {
   content: "[ ";
-  transform: scaleX(0.8);
-  font-weight: 200;
+  transform: scaleX(1.5);
+  font-weight: 400;
   font-size: 2.8em;
   color: #EC008C;
 }
@@ -9761,7 +9765,7 @@ nav .navbar-brand:after {
   font-weight: 200;
   font-size: 2.8em;
   color: #EC008C;
-  transform: scaleX(0.8);
+  transform: scaleX(1.1);
 }
 
 input, select, option {

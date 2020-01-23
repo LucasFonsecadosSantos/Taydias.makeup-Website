@@ -1,0 +1,53 @@
+{
+    "navbar": [
+        {
+            "id": "nav-link-home",
+            "alt": "Link de navegação da página inicial.",
+            "title": "Clique para retornar a página inicial.",
+            "route": "/",
+            "text": "ínicio"
+        },
+        {
+            "id": "nav-link-schedule",
+            "alt": "Link de navegação para agendar uma seção.",
+            "title": "Clique para agendar uma make.",
+            "route": "/agendar",
+            "text": "agendar"
+        },
+        {
+            "id": "nav-link-history",
+            "alt": "Link de navegação sobre minha história.",
+            "title": "Clique para avançar para minha história.",
+            "route": "/historia",
+            "text": "história"
+        },
+        {
+            "id": "nav-link-videoGallery",
+            "alt": "Link de navegação da página inicial.",
+            "title": "Clique para retornar a página inicial.",
+            "route": "/videos",
+            "text": "vídeos"
+        },
+        {
+            "id": "nav-link-photoGallery",
+            "alt": "Link de navegação da página inicial.",
+            "title": "Clique para retornar a página inicial.",
+            "route": "/fotos",
+            "text": "fotos"
+        },
+        {
+            "id": "nav-link-works",
+            "alt": "Link de navegação do portifólio.",
+            "title": "Clique para avançar ao portifólio.",
+            "route": "/porttifolio",
+            "text": "portifólio"
+        },
+        {
+            "id": "nav-link-contact",
+            "alt": "Link de navegação para contato.",
+            "title": "Clique para entrar em contato comigo.",
+            "route": "/contato",
+            "text": "contato"
+        }
+    ]
+}

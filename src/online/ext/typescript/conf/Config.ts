@@ -2,7 +2,8 @@ export enum DataEntity {
 
     _ABOUT_         = "about",
     _PHOTO_GALLERY_ = "photo_gallery",
-    _VIDEO_GALLERY_ = "video_gallery"
+    _VIDEO_GALLERY_ = "video_gallery",
+    _HEADER_        = "header"
 }
 
 export class Config {
@@ -17,7 +18,8 @@ export class Config {
 
     public static readonly CONTENT_FILES_PATH:  Map<DataEntity,string> = new Map([
 
-        [DataEntity._ABOUT_, Config.CONTENT_PATH + "about.json"]
+        [DataEntity._ABOUT_, Config.CONTENT_PATH    + "about.json"],
+        [DataEntity._HEADER_, Config.CONTENT_PATH   + "header.json"]
 
     ]);
 

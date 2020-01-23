@@ -3,6 +3,7 @@ export var DataEntity;
     DataEntity["_ABOUT_"] = "about";
     DataEntity["_PHOTO_GALLERY_"] = "photo_gallery";
     DataEntity["_VIDEO_GALLERY_"] = "video_gallery";
+    DataEntity["_HEADER_"] = "header";
 })(DataEntity || (DataEntity = {}));
 export class Config {
 }
@@ -13,6 +14,7 @@ Config.VIDEO_GALLERY_PATH = "/data/video_gallery/";
 Config.MESSAGES_PATH = "/data/config/messages.json";
 Config.SYSTEM_PATH = "/data/config/system.json";
 Config.CONTENT_FILES_PATH = new Map([
-    [DataEntity._ABOUT_, Config.CONTENT_PATH + "about.json"]
+    [DataEntity._ABOUT_, Config.CONTENT_PATH + "about.json"],
+    [DataEntity._HEADER_, Config.CONTENT_PATH + "header.json"]
 ]);
 //# sourceMappingURL=Config.js.map
