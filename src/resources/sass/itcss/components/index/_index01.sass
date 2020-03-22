@@ -50,7 +50,16 @@
 
 
 //--------[ COMPONENTS MODULE - INDEX COMPONENT]--------------//
+#divider01
+    background-color: transparent
+    border-right: 50vw solid #000
+    border-left:  50vw solid transparent
+    border-top:   150px solid #000
+    border-bottom: 150px solid #fff
+    z-index: 10
+    margin-bottom: -100px
 #index01
+    z-index: 1
     background: transparent
     height: 100vh
     .row
@@ -65,7 +74,9 @@
         padding: 0px
         margin: 0px
         overflow: hidden
+        z-index: 2
         img
+            z-index: 3
             transition: transform .8s
             &:hover
                 transform: scale(2) rotate(24deg)

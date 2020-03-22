@@ -9779,13 +9779,28 @@ input, select, option {
   transition: all 0.8s;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 500;
 }
 input:hover, select:hover, option:hover {
   border-bottom-color: #FC6767;
 }
 input:focus, select:focus, option:focus {
   border-bottom-color: #FC6767;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("/img/structure/down.svg");
+  background-position: right 50%;
+  background-size: 4%;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+select:focus {
+  outline: none;
 }
 
 .header__body {
@@ -9832,7 +9847,18 @@ input:focus, select:focus, option:focus {
   transform: translateY(1);
 }
 
+#divider01 {
+  background-color: transparent;
+  border-right: 50vw solid #000;
+  border-left: 50vw solid transparent;
+  border-top: 150px solid #000;
+  border-bottom: 150px solid #fff;
+  z-index: 10;
+  margin-bottom: -100px;
+}
+
 #index01 {
+  z-index: 1;
   background: transparent;
   height: 100vh;
 }
@@ -9848,8 +9874,10 @@ input:focus, select:focus, option:focus {
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  z-index: 2;
 }
 #index01 .index01__sub img {
+  z-index: 3;
   transition: transform 0.8s;
 }
 #index01 .index01__sub img:hover {
@@ -9900,6 +9928,18 @@ input:focus, select:focus, option:focus {
   @extends .row;
   padding: 0px;
   margin: 3% 0px;
+}
+
+.divider01 {
+  z-index: 20;
+  margin-top: -300px;
+  width: 0%;
+  overflow: hidden;
+  height: 0px;
+  border-bottom: 150px solid #000;
+  border-top: 150px solid transparent;
+  border-right: 50vw solid #000;
+  border-left: 50vw solid transparent;
 }
 
 .hidden {
